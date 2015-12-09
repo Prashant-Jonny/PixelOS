@@ -10,6 +10,7 @@ namespace PixelOS.Controls
     {
         public bool isminimized { get; set; }
         public bool isfocus { get; set; }
+        public bool needRedraw { get; set; }
 
         public Data.Point topleft = new Data.Point();
         public int width = 0;

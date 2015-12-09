@@ -8,6 +8,8 @@ namespace PixelOS.Kernel
 {
     public class GraphicsHandler //the graphics loop
     {
-        
+        public void RedrawLoop()
+        {
+        }
     }
 }

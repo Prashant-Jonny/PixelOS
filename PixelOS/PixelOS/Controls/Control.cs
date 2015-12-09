@@ -8,6 +8,7 @@ namespace PixelOS.Controls
 {
     public interface Control
     {
+        bool needRedraw { get; set; }
         bool isfocus { get; set; }
         bool isminimized { get; set; }
         void Draw();

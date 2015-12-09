@@ -10,9 +10,10 @@ namespace PixelOS.Controls
     {
        // public bool actualisfocus = true;
        // public bool isfocus=true;//{get{return auc;}set { isminimized = value; }}
-     //   public bool isminimized=true;//{get{return isminimized;}set{isminimized = value;}}
+        //   public bool isminimized=true;//{get{return isminimized;}set{isminimized = value;}} そして、トイレカバー! \(^n^ \)
         public bool isminimized { get; set; }
         public bool isfocus { get; set; }
+        public bool needRedraw { get; set; }
 
         public string Text = "";
         public Box box = null;
