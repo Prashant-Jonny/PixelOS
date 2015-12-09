@@ -47,7 +47,6 @@
     <Compile Include="Controls\TextBox.cs" />
     <Compile Include="Data\Point.cs" />
     <Compile Include="Kernel\Boot.cs" />
-    <Compile Include="Kernel\GraphicsHandler.cs" />
     <Compile Include="Kernel\InputHandler.cs" />
     <Compile Include="Kernel\wm.cs" />
     <Compile Include="Program.cs" />

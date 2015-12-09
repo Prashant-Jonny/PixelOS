@@ -8,6 +8,7 @@ namespace PixelOS.Kernel
 {
     public class wm
     {
+      //  public static GraphicsHandler gh = null;
         public static int controlwithfocus = 0;
         public static List<Controls.Control> controls = new List<Controls.Control>();
         public static void HandleWMInput(ConsoleKeyInfo k)
@@ -47,9 +48,32 @@ namespace PixelOS.Kernel
             #endregion
             //redraw here
         }
+        public static void Redraw()
+        {
+           // while (true)
+            {
+               // try
+                {
+                    foreach (var control in wm.controls)
+                    {
+                        if (!control.isminimized)
+                        {
+                            Console.Clear();
+                            control.Draw();
+                        }
+                    }
+                }
+
+               // catch { Console.Write("X"); }
+                System.Threading.Thread.Sleep(100);
+            }
+        }
+    //}
         public static void DrawDesktop()
         {
             DrawAppBar();
+            Redraw();
+
         }
         public static void DrawAppBar()
         {
